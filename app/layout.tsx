@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { myLocalFont } from "./fonts";
 import Navbar from "./components/navbar/navbar";
+import ClientOnly from "./components/client-only";
 
 export const metadata: Metadata = {
   title: "Arbnb",

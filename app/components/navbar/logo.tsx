@@ -9,6 +9,7 @@ export default function Logo() {
       height={100}
       alt="logo"
       className="hidden md:block cursor-pointer"
+      priority
     />
   );
 }
