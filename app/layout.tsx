@@ -4,6 +4,7 @@ import "./globals.css";
 import { myLocalFont } from "./fonts";
 import Navbar from "./components/navbar/navbar";
 import ClientOnly from "./components/client-only";
+import RegisterModal from "./components/modal/RegisterModal";
 
 export const metadata: Metadata = {
   title: "Arbnb",
@@ -18,7 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${myLocalFont.className}  antialiased`}>
-        <Navbar />
+        <ClientOnly>
+          <RegisterModal />
+          <Navbar />
+        </ClientOnly>
         {children}
       </body>
     </html>
