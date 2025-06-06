@@ -38,7 +38,9 @@ export default function RegisterModal() {
   };
 
   const bodyContent = (
-    <div className="flex flex-col gap-4">Hello Modal body</div>
+    <div className="flex flex-col gap-4">
+      <Heading />
+    </div>
   );
   return (
     <Modal
